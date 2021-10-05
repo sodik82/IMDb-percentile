@@ -6,4 +6,11 @@ Project to better compare the movies and series based on the relative comparison
 
 1. Download and decompress [datasets](https://www.imdb.com/interfaces/) into `import/input`
     * files: `basics.tsv`, `episode.tsv`, `ratings.tsv`
-2. Start Neo4j - `docker-compose up` and [open](http://localhost:7474)
+2. Start Neo4j - `docker-compose up` and optionally [open](http://localhost:7474)
+3. Optional - change permissions on `import/input` since neo4j will change the permissons
+3. Start Cypher-shell in docker
+
+```
+docker exec -it imdb-neo4j_neo4j_1 bash
+# cypher-shell
+```

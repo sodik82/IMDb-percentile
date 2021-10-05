@@ -7,7 +7,8 @@ services:
       - 7687:7687
     volumes:
       - ./docker/data:/data
-      - ./docker/import:/var/lib/neo4j/import
+      - ./import/input:/var/lib/neo4j/import
+      - ./import/scripts:/opt/my-scripts
       - ./docker/logs:/logs
       - ./docker/plugins:/plugins
     environment: 
