@@ -1,8 +1,7 @@
-:auto USING PERIODIC COMMIT 10000
 LOAD CSV WITH HEADERS FROM 'file:///basics.tsv'
  AS line FIELDTERMINATOR '\t'
  WITH line                           
- LIMIT 20
+ LIMIT 40000
  WHERE line.isAdult = '0'  // skip the adult productions
  AND line.titleType = 'tvSeries'
  MERGE (n:Titles {tconst: line.tconst})  // create node if doesn't exist yet
