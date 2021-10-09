@@ -1,0 +1,406 @@
+[
+    {
+        "percentige": "0.0",
+        "rating": " 1.0"
+    },
+    {
+        "percentige": "0.01",
+        "rating": " 3.0"
+    },
+    {
+        "percentige": "0.02",
+        "rating": " 3.6"
+    },
+    {
+        "percentige": "0.03",
+        "rating": " 4.0"
+    },
+    {
+        "percentige": "0.04",
+        "rating": " 4.3"
+    },
+    {
+        "percentige": "0.05",
+        "rating": " 4.5"
+    },
+    {
+        "percentige": "0.06",
+        "rating": " 4.7"
+    },
+    {
+        "percentige": "0.07",
+        "rating": " 4.8"
+    },
+    {
+        "percentige": "0.08",
+        "rating": " 5.0"
+    },
+    {
+        "percentige": "0.09",
+        "rating": " 5.1"
+    },
+    {
+        "percentige": "0.1",
+        "rating": " 5.2"
+    },
+    {
+        "percentige": "0.11",
+        "rating": " 5.3"
+    },
+    {
+        "percentige": "0.12",
+        "rating": " 5.4"
+    },
+    {
+        "percentige": "0.13",
+        "rating": " 5.5"
+    },
+    {
+        "percentige": "0.14",
+        "rating": " 5.6"
+    },
+    {
+        "percentige": "0.15",
+        "rating": " 5.6"
+    },
+    {
+        "percentige": "0.16",
+        "rating": " 5.7"
+    },
+    {
+        "percentige": "0.17",
+        "rating": " 5.8"
+    },
+    {
+        "percentige": "0.18",
+        "rating": " 5.8"
+    },
+    {
+        "percentige": "0.19",
+        "rating": " 5.9"
+    },
+    {
+        "percentige": "0.2",
+        "rating": " 6.0"
+    },
+    {
+        "percentige": "0.21",
+        "rating": " 6.0"
+    },
+    {
+        "percentige": "0.22",
+        "rating": " 6.1"
+    },
+    {
+        "percentige": "0.23",
+        "rating": " 6.1"
+    },
+    {
+        "percentige": "0.24",
+        "rating": " 6.2"
+    },
+    {
+        "percentige": "0.25",
+        "rating": " 6.2"
+    },
+    {
+        "percentige": "0.26",
+        "rating": " 6.3"
+    },
+    {
+        "percentige": "0.27",
+        "rating": " 6.3"
+    },
+    {
+        "percentige": "0.28",
+        "rating": " 6.3"
+    },
+    {
+        "percentige": "0.29",
+        "rating": " 6.4"
+    },
+    {
+        "percentige": "0.3",
+        "rating": " 6.4"
+    },
+    {
+        "percentige": "0.31",
+        "rating": " 6.5"
+    },
+    {
+        "percentige": "0.32",
+        "rating": " 6.5"
+    },
+    {
+        "percentige": "0.33",
+        "rating": " 6.5"
+    },
+    {
+        "percentige": "0.34",
+        "rating": " 6.6"
+    },
+    {
+        "percentige": "0.35",
+        "rating": " 6.6"
+    },
+    {
+        "percentige": "0.36",
+        "rating": " 6.6"
+    },
+    {
+        "percentige": "0.37",
+        "rating": " 6.7"
+    },
+    {
+        "percentige": "0.38",
+        "rating": " 6.7"
+    },
+    {
+        "percentige": "0.39",
+        "rating": " 6.8"
+    },
+    {
+        "percentige": "0.4",
+        "rating": " 6.8"
+    },
+    {
+        "percentige": "0.41",
+        "rating": " 6.8"
+    },
+    {
+        "percentige": "0.42",
+        "rating": " 6.9"
+    },
+    {
+        "percentige": "0.43",
+        "rating": " 6.9"
+    },
+    {
+        "percentige": "0.44",
+        "rating": " 6.9"
+    },
+    {
+        "percentige": "0.45",
+        "rating": " 7.0"
+    },
+    {
+        "percentige": "0.46",
+        "rating": " 7.0"
+    },
+    {
+        "percentige": "0.47",
+        "rating": " 7.0"
+    },
+    {
+        "percentige": "0.48",
+        "rating": " 7.1"
+    },
+    {
+        "percentige": "0.49",
+        "rating": " 7.1"
+    },
+    {
+        "percentige": "0.5",
+        "rating": " 7.1"
+    },
+    {
+        "percentige": "0.51",
+        "rating": " 7.2"
+    },
+    {
+        "percentige": "0.52",
+        "rating": " 7.2"
+    },
+    {
+        "percentige": "0.53",
+        "rating": " 7.2"
+    },
+    {
+        "percentige": "0.54",
+        "rating": " 7.3"
+    },
+    {
+        "percentige": "0.55",
+        "rating": " 7.3"
+    },
+    {
+        "percentige": "0.56",
+        "rating": " 7.3"
+    },
+    {
+        "percentige": "0.57",
+        "rating": " 7.3"
+    },
+    {
+        "percentige": "0.58",
+        "rating": " 7.4"
+    },
+    {
+        "percentige": "0.59",
+        "rating": " 7.4"
+    },
+    {
+        "percentige": "0.6",
+        "rating": " 7.4"
+    },
+    {
+        "percentige": "0.61",
+        "rating": " 7.5"
+    },
+    {
+        "percentige": "0.62",
+        "rating": " 7.5"
+    },
+    {
+        "percentige": "0.63",
+        "rating": " 7.5"
+    },
+    {
+        "percentige": "0.64",
+        "rating": " 7.6"
+    },
+    {
+        "percentige": "0.65",
+        "rating": " 7.6"
+    },
+    {
+        "percentige": "0.66",
+        "rating": " 7.6"
+    },
+    {
+        "percentige": "0.67",
+        "rating": " 7.7"
+    },
+    {
+        "percentige": "0.68",
+        "rating": " 7.7"
+    },
+    {
+        "percentige": "0.69",
+        "rating": " 7.8"
+    },
+    {
+        "percentige": "0.7",
+        "rating": " 7.8"
+    },
+    {
+        "percentige": "0.71",
+        "rating": " 7.8"
+    },
+    {
+        "percentige": "0.72",
+        "rating": " 7.9"
+    },
+    {
+        "percentige": "0.73",
+        "rating": " 7.9"
+    },
+    {
+        "percentige": "0.74",
+        "rating": " 7.9"
+    },
+    {
+        "percentige": "0.75",
+        "rating": " 8.0"
+    },
+    {
+        "percentige": "0.76",
+        "rating": " 8.0"
+    },
+    {
+        "percentige": "0.77",
+        "rating": " 8.0"
+    },
+    {
+        "percentige": "0.78",
+        "rating": " 8.1"
+    },
+    {
+        "percentige": "0.79",
+        "rating": " 8.1"
+    },
+    {
+        "percentige": "0.8",
+        "rating": " 8.1"
+    },
+    {
+        "percentige": "0.81",
+        "rating": " 8.2"
+    },
+    {
+        "percentige": "0.82",
+        "rating": " 8.2"
+    },
+    {
+        "percentige": "0.83",
+        "rating": " 8.3"
+    },
+    {
+        "percentige": "0.84",
+        "rating": " 8.3"
+    },
+    {
+        "percentige": "0.85",
+        "rating": " 8.3"
+    },
+    {
+        "percentige": "0.86",
+        "rating": " 8.4"
+    },
+    {
+        "percentige": "0.87",
+        "rating": " 8.4"
+    },
+    {
+        "percentige": "0.88",
+        "rating": " 8.5"
+    },
+    {
+        "percentige": "0.89",
+        "rating": " 8.5"
+    },
+    {
+        "percentige": "0.9",
+        "rating": " 8.6"
+    },
+    {
+        "percentige": "0.91",
+        "rating": " 8.6"
+    },
+    {
+        "percentige": "0.92",
+        "rating": " 8.7"
+    },
+    {
+        "percentige": "0.93",
+        "rating": " 8.8"
+    },
+    {
+        "percentige": "0.94",
+        "rating": " 8.8"
+    },
+    {
+        "percentige": "0.95",
+        "rating": " 8.9"
+    },
+    {
+        "percentige": "0.96",
+        "rating": " 9.0"
+    },
+    {
+        "percentige": "0.97",
+        "rating": " 9.1"
+    },
+    {
+        "percentige": "0.98",
+        "rating": " 9.2"
+    },
+    {
+        "percentige": "0.99",
+        "rating": " 9.4"
+    },
+    {
+        "percentige": "1.0",
+        "rating": " 10.0"
+    }
+]
