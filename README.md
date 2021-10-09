@@ -16,7 +16,9 @@ Project to better compare the movies and series based on the relative comparison
 
 2. Start Neo4j - `docker-compose up` and optionally [open](http://localhost:7474)
 3. Optional - change permissions on `import/input` since neo4j will change the permissons
-3. Start Cypher-shell in docker
+4. Import data './startImport.sh'
+
+### Start Cypher-shell in docker
 
 ```
 docker exec -it imdb-neo4j_neo4j_1 bash

@@ -19,4 +19,15 @@ LOAD CSV WITH HEADERS FROM 'file:///basics.csv'
 CREATE INDEX titles_tconst 
 	IF NOT EXISTS
 	FOR (n: Titles)
-	ON (n.tconst)
+	ON (n.tconst);
+
+USING PERIODIC COMMIT 1000
+LOAD CSV WITH HEADERS FROM 'file:///ratings.csv'
+ AS line
+ WITH line
+ LIMIT 40000
+ MERGE (n:Titles {tconst: line.tconst})
+ ON MATCH SET 
+ 	n.avgRating = toFloat(line.averageRating),
+	n.numVotes = toInteger(line.numVotes);
+
