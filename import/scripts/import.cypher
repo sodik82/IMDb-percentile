@@ -2,9 +2,9 @@ USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///basics.csv'
  AS line
  WITH line                           
- LIMIT 40000
+//  LIMIT 40000
  WHERE line.isAdult = '0'  // skip the adult productions
- AND line.titleType = 'tvSeries'
+ AND ((line.titleType = 'tvSeries') OR (line.titleType = 'movie'))
  AND toInteger(line.startYear) > 1990
  MERGE (n:Titles {tconst: line.tconst})  // create node if doesn't exist yet
    ON CREATE SET
@@ -25,7 +25,7 @@ USING PERIODIC COMMIT 1000
 LOAD CSV WITH HEADERS FROM 'file:///ratings.csv'
  AS line
  WITH line
- LIMIT 40000
+//  LIMIT 40000
  MERGE (n:Titles {tconst: line.tconst})
  ON MATCH SET 
  	n.avgRating = toFloat(line.averageRating),
