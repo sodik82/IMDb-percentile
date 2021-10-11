@@ -1,3 +1,5 @@
+import { test } from "./data";
+
 console.log("Hello from IMDb percentile");
 var readyStateCheckInterval = setInterval(function () {
   if (document.readyState === "complete") {
@@ -5,7 +7,7 @@ var readyStateCheckInterval = setInterval(function () {
 
     // ----------------------------------------------------------
     // This part of the script triggers when page is done loading
-    console.log("Hello. This message was sent from scripts/inject.js");
+    console.log("Hello. This message was sent from scripts/inject.js " + test.rating);
     // ----------------------------------------------------------
   }
 }, 10);

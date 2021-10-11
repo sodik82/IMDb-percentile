@@ -1,2 +1,7 @@
 import/input
 docker/
+
+extension/js/
+extension/node_modules/
+
+.DS_Store

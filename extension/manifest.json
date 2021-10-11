@@ -18,7 +18,7 @@
         "https://www.imdb.com/*"
       ],
       "js": [
-        "src/inject/inject.js"
+        "js/inject.js"
       ]
     }
   ]

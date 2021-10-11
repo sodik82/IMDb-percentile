@@ -1,0 +1,17 @@
+{
+  "name": "imdb-percentile",
+  "version": "1.0.0",
+  "description": "Chrome extension for IMDb rating percentiles",
+  "main": "js/inject.js",
+  "author": "sodik",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc-bundle ./src/inject/inject.ts --outFile js/inject.js",
+    "start": "tsc-bundle ./src/inject/inject.ts --outFile js/inject.js --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "typescript-bundle": "^1.0.17"
+  }
+}
