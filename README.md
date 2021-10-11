@@ -17,6 +17,13 @@ Project to better compare the movies and series based on the relative comparison
 2. Start Neo4j - `docker-compose up` and optionally [open](http://localhost:7474)
 3. Optional - change permissions on `import/input` since neo4j will change the permissons
 4. Import data './startImport.sh'
+5. Do statistics (per type: `movie` / `tvSeries`)
+
+```
+TYPE=movie ./doStatistics.sh | tee outputs/moviePerc.txt
+cat outputs/moviePerc.txt | grep -v toFloat > outputs/moviePerc.csv
+```
+
 
 ### Start Cypher-shell in docker
 
