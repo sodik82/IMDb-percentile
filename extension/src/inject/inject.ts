@@ -1,13 +1,16 @@
 import { test } from "./data";
+import { getTitleId } from "./page-utils";
 
 console.log("Hello from IMDb percentile");
 var readyStateCheckInterval = setInterval(function () {
   if (document.readyState === "complete") {
     clearInterval(readyStateCheckInterval);
-
-    // ----------------------------------------------------------
-    // This part of the script triggers when page is done loading
-    console.log("Hello. This message was sent from scripts/inject.js " + test.rating);
-    // ----------------------------------------------------------
+    start();
   }
 }, 10);
+
+function start() {
+  console.log("Hello. This message was sent from scripts/inject.js");
+  const titleId = getTitleId();
+  console.log("TitleId=", titleId);
+}

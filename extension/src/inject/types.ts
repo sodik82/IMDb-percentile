@@ -3,3 +3,14 @@ export interface PercentilePoint {
     rating: number;
 }
 
+export enum TitleType {
+    movie = "movie",
+    series = "tvSeries"
+}
+
+export interface TitleId {
+    type: TitleType;
+    tconst: string;
+}
+
+

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "strict": true,
     "outDir": "./js",
     "allowJs": true,
     "target": "es6"

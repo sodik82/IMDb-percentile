@@ -9,9 +9,6 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "permissions": [
-    "https://www.imdb.com/*"
-  ],
   "content_scripts": [
     {
       "matches": [
