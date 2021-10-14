@@ -1,5 +1,5 @@
 import { test } from "./data";
-import { getTitleId } from "./page-utils";
+import { getRating, getTitleId } from "./page-utils";
 
 console.log("Hello from IMDb percentile");
 var readyStateCheckInterval = setInterval(function () {
@@ -12,5 +12,6 @@ var readyStateCheckInterval = setInterval(function () {
 function start() {
   console.log("Hello. This message was sent from scripts/inject.js");
   const titleId = getTitleId();
-  console.log("TitleId=", titleId);
+  const rating = getRating();
+  console.log("percentile info", { titleId, rating });
 }

@@ -17,3 +17,13 @@ export function getIdFromUrl(urlPath: string): string | undefined {
   const found = urlPath.match(/\/title\/(\w+)\//);
   return found ? found[1] : undefined;
 }
+
+export function getRating() {
+    const el = document.querySelector("[data-testid='hero-rating-bar__aggregate-rating__score']")
+    if (!el) {
+        return undefined
+    }
+    // @ts-ignore
+    const text = el.children[0].innerText;
+    return parseFloat(text);
+}
