@@ -1,3 +1,4 @@
+import { greenToRed } from "./colors";
 import { TitleId, TitleType } from "./types";
 
 export function getTitleId(): TitleId | undefined {
@@ -28,14 +29,15 @@ export function getRating() {
   return parseFloat(text);
 }
 
-export function setPercentile(value: number) {
+export function setPercentile(value: number, title?: string) {
   const el = getRatingElement()!;
   const sybling = el?.children[1];
   if (!sybling) {
     console.warn("Promile - can't set percentile " + value);
     return;
   }
-  sybling.innerHTML = `<b>${value}%</b>`;
+  const color = greenToRed(100-value, true);
+  sybling.innerHTML = `<b style="color: ${color}" title="${title ?? ''}">${value}%</b>`;
 }
 
 function getRatingElement() {

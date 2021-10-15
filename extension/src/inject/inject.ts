@@ -15,6 +15,6 @@ function start() {
   console.log("percentile info", { titleId, rating });
   if (rating && titleId) {
     const percentile = computePercentile(titleId.type, rating)
-    setPercentile(percentile);
+    setPercentile(percentile, titleId.type);
   }
 }
