@@ -3,6 +3,11 @@ export interface PercentilePoint {
     rating: number;
 }
 
+export interface RawPercentilePoint {
+    percentile: string;
+    rating: string;
+}
+
 export enum TitleType {
     movie = "movie",
     series = "tvSeries"

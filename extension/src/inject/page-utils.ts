@@ -35,8 +35,7 @@ export function setPercentile(value: number) {
     console.warn("Promile - can't set percentile " + value);
     return;
   }
-  console.log('setting', sybling)
-  sybling.innerHTML = `<b>${value}</b>`;
+  sybling.innerHTML = `<b>${value}%</b>`;
 }
 
 function getRatingElement() {
