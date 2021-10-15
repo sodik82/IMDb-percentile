@@ -3,6 +3,7 @@
     "strict": true,
     "outDir": "./js",
     "allowJs": true,
+    "skipLibCheck": true,
     "target": "es6"
   },
   "include": ["./src/**/*"]
