@@ -10,7 +10,8 @@ export interface RawPercentilePoint {
 
 export enum TitleType {
     movie = "movie",
-    series = "tvSeries"
+    series = "tvSeries",
+    episode = "tvEpisode",
 }
 
 export interface TitleId {

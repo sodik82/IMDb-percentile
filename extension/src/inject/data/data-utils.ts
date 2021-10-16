@@ -15,11 +15,23 @@ function fromRawData(p: RawPercentilePoint): PercentilePoint {
 }
 
 export function computePercentile(type: TitleType, rating: number): number {
-  const raw = type === TitleType.series ? seriesRaw : moviesRaw;
+  let raw: RawPercentilePoint[] | undefined = undefined;
+  switch (type) {
+    case TitleType.series:
+    case TitleType.episode:
+      raw = seriesRaw;
+      break;
+    case TitleType.movie:
+      raw = moviesRaw;
+      break;
+    default:
+      console.log("Unknown type " + type);
+      return -1;
+  }
   const data = raw.map(fromRawData);
-  const idx = data.findIndex(point => point.rating >= rating)
+  const idx = data.findIndex((point) => point.rating >= rating);
   if (idx < 0) {
-      return 100;
+    return 100;
   }
   return Math.round(100 * data[idx].percentile);
 }

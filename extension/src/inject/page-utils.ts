@@ -7,11 +7,26 @@ export function getTitleId(): TitleId | undefined {
   if (!tconst) {
     return undefined;
   }
+  const type = getTitleType();
+  return type
+    ? {
+        type,
+        tconst,
+      }
+    : undefined;
+}
+
+function getTitleType(): TitleType | undefined {
   const episodes = document.getElementsByClassName("episode-guide-text");
-  return {
-    type: episodes.length > 0 ? TitleType.series : TitleType.movie,
-    tconst,
-  };
+  if (episodes.length > 0) {
+    return TitleType.series;
+  }
+  const episode = getByTestId("hero-subnav-bar-all-episodes-button");
+  if(episodes) {
+    return TitleType.episode
+  }
+  // currently I haven't found anything specific to movies (but it might bring false positives)
+  return TitleType.movie;
 }
 
 export function getIdFromUrl(urlPath: string): string | undefined {
@@ -36,12 +51,16 @@ export function setPercentile(value: number, title?: string) {
     console.warn("Promile - can't set percentile " + value);
     return;
   }
-  const color = greenToRed(100-value, true);
-  sybling.innerHTML = `<b style="color: ${color}" title="${title ?? ''}">${value}%</b>`;
+  const color = greenToRed(100 - value, true);
+  sybling.innerHTML = `<b style="color: ${color}" title="${
+    title ?? ""
+  }">${value}%</b>`;
 }
 
 function getRatingElement() {
-  return document.querySelector(
-    "[data-testid='hero-rating-bar__aggregate-rating__score']"
-  );
+  return getByTestId("hero-rating-bar__aggregate-rating__score");
+}
+
+function getByTestId(dataTestId: string) {
+  return document.querySelector(`[data-testid='${dataTestId}']`);
 }
