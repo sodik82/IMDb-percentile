@@ -1,6 +1,6 @@
 {
-  "name": "IMDb percentile",
-  "version": "0.0.1",
+  "name": "__MSG_appName__",
+  "version": "1.0.0",
   "manifest_version": 3,
   "description": "This extension shows percentile for IMDb ratings",
   "icons": {
