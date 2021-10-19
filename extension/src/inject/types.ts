@@ -3,6 +3,10 @@ export interface PercentilePoint {
     rating: number;
 }
 
+export interface GenrePercentile extends PercentilePoint {
+    genre: string;
+}
+
 export interface RawPercentilePoint {
     percentile: string;
     rating: string;
