@@ -8,7 +8,7 @@ import {
 import { seriesByGenre } from "./seriesbyGenreData";
 import { moviesRaw } from "./moviesData";
 import { seriesRaw } from "./seriesData";
-import { moviesByGenre } from "./data";
+import { moviesByGenre } from "./moviesByGenre";
 
 function fromRawData(p: RawPercentilePoint): PercentilePoint {
   return {
@@ -53,7 +53,7 @@ export function computePercentileByGenre(
       console.log("Unknown type " + type);
       return -1;
   }
-  const data = seriesByGenre.filter((p) => p.genre.toLowerCase() === genre);
+  const data = raw.filter((p) => p.genre.toLowerCase() === genre);
   if (data.length === 0) {
     return -1;
   }

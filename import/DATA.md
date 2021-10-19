@@ -26,6 +26,19 @@ MATCH (n:Titles{titleType: 'tvSeries'})
 MATCH (n:Titles) UNWIND n.genres AS genres WITH DISTINCT genres RETURN genres
 ```
 
+Find percentile
+
+```
+UNWIND range(0, 10) AS percentile
+CALL {
+    WITH percentile
+    MATCH (m: Titles{titleType: "tvSeries"})
+    RETURN percentileDisc(m.avgRating, toFloat(percentile)/ 100) AS rating 
+}
+RETURN percentile, rating
+
+```
+
 Find percentile per genre
 
 ```

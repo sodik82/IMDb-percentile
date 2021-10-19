@@ -45,7 +45,7 @@ function enhanceChip(chip: Element, percentile: number) {
   if (percentile < 0) {
     return;
   }
-  chip.innerHTML = chip.innerHTML + " " + generateHtml(percentile);
+  chip.innerHTML = chip.innerHTML + "&nbsp;" + generateHtml(percentile);
 }
 
 export function enhanceGenreChips(type: TitleType, rating: number): void {
