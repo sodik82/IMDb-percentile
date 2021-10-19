@@ -4,7 +4,8 @@
     "outDir": "./js",
     "allowJs": true,
     "skipLibCheck": true,
-    "target": "es6"
+    "moduleResolution": "Classic",
+    "target": "ESNext"
   },
   "include": ["./src/**/*"]
 }

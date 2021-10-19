@@ -1,5 +1,5 @@
 import { computePercentile } from "./data/data-utils";
-import { getRating, getTitleId, setPercentile } from "./page-utils";
+import { enhanceGenreChips, getRating, getTitleId, setPercentile } from "./page-utils";
 
 console.log("Hello from IMDb percentile");
 var readyStateCheckInterval = setInterval(function () {
@@ -16,5 +16,6 @@ function start() {
   if (rating && titleId) {
     const percentile = computePercentile(titleId.type, rating)
     setPercentile(percentile, titleId.type);
+    enhanceGenreChips(titleId.type, rating);
   }
 }

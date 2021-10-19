@@ -1,6 +1,6 @@
 import { GenrePercentile } from "../types";
 
-export const rawByGenre: GenrePercentile[] = [
+export const seriesByGenre: GenrePercentile[] = [
   {
     genre: "Comedy",
     percentile: 0,
