@@ -26,4 +26,11 @@ describe("extractGenreFromUrl", () => {
       )
     ).toBe("action");
   });
+  it("works with complex words", () => {
+    expect(
+      extractGenreFromUrl(
+        "/search/title?genres=sci-fi&explore=title_type,genres&ref_=tt_ov_inf"
+      )
+    ).toBe("sci-fi");
+  });
 });

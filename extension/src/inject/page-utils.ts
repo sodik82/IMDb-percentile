@@ -62,7 +62,7 @@ export function extractGenreFromUrl(urlPath?: string): string | undefined {
   if (!urlPath) {
     return undefined;
   }
-  const found = urlPath.match(/genres=(\w+)\&/);
+  const found = urlPath.match(/genres=([-a-z]+)\&/);
   return found ? found[1] : undefined;
 }
 

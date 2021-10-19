@@ -1,5 +1,6 @@
 ﻿import { GenrePercentile } from "../types";
 
+// @ts-ignore
 export const moviesByGenre: GenrePercentile[] = [
   {
     genre: "Comedy",
