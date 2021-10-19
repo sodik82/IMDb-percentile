@@ -22,7 +22,7 @@ function getTitleType(): TitleType | undefined {
     return TitleType.series;
   }
   const episode = getByTestId("hero-subnav-bar-all-episodes-button");
-  if(episodes) {
+  if(episode) {
     return TitleType.episode
   }
   // currently I haven't found anything specific to movies (but it might bring false positives)
